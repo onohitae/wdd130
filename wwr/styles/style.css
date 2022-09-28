@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=IBM+Plex+Serif&family=Roboto&family=Rock+Salt&display=swap');
 body {
     background-color: #FFFCF2;
+    font-family: 'Cormorant Garamond', Garamond, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #386641;
@@ -11,12 +16,19 @@ nav a {
     text-align: center;
     color: #FFFCF2;
     text-decoration: none;
+    font-family: 'IBM Plex Serif', Arial, sans-serif;
+    padding: 35px;
 }
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 footer {
     background-color: #386641;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     color: #FFFCF2;
@@ -33,10 +45,24 @@ footer a:hover {
     color: #FFFCF2;
     background-color: #252422;
 }
+footer .social img {
+    padding-top: 15px;
+}
+h4 {
+    color: #252422;
+}
+h2 {
+    font-family: 'IBM Plex Serif', Arial, sans-serif;
+    margin: 0;
+}
 .book, .join {
-    background-color: #386641;
+    background-color: #184521;
     color: #FFFCF2;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #252422;
@@ -47,21 +73,36 @@ footer a:hover {
 }
 .msg {
     background-color: #386641;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 150px;
 }
 .msg h2 {
     color: #FFFCF2;
 }
 .msg p {
     color: #FFFCF2;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .home-title {
     color: #252422;
+    font-family: 'Rock Salt', 'Brush Script MT', cursive;
+    font-size: 2em;
+    margin-top: 10px;
 }
 .logo {
     width: 80px;
 }
 .icon {
-    width:80px;
+    width: 80px;
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #252422;
 }
 #content {
     max-width: 1600px;
@@ -73,10 +114,11 @@ footer a:hover {
 #background {
     height: 725px;
     background: #252422;
+    margin-bottom: 100px;
 }
 #hero-img {
-    width: 100%
+    width: 100%;
 }
-h4 {
-    color: #252422;
+#logo_link {
+    padding-top: 5px;
 }
