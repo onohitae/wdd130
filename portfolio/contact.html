@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onohitae Pogoson | Modeling Portfolio | About</title>
+    <title>Onohitae Pogoson | Contact | Send a Message</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -28,8 +28,9 @@
         </div>
         <section id="hero2-msg">
             <h1 class="home-title2">CONTACT</h1>
-            <h4>Let's chat! Tell me about your project.</h4>
+            <h4><i>Let's chat! Tell me about your project.</i></h4>
         </section>
+    </div>
 <main>
     <div id="feedback"></div>
         <form action="/my-contact-form-page" method="post">
@@ -76,12 +77,12 @@
                 the passion that she shows;<br>
                 And the beauty of a woman<br>
                 with passing years only grows.</p>
-            <p class="author">Audrey Hepburn</p> 
+            <p id="author">Audrey Hepburn</p> 
         </section>
     </div>
     <footer>
         <p>Copyright &copy; 2022 Onohitae Pogoson, All Rights Reserved. All material on this site may not be reproduced, distributed, cached or otherwise used, except with my prior written permission.</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
         <div class="social">
             <a href="https://www.instagram.com/ono.hitae" target="_blank">
                 <img src="images/IG_icon2.png" alt="ig icon">
@@ -89,5 +90,22 @@
         </div>
     </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
