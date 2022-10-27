@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Playfair+Display+SC:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;450;700&family=Playfair+Display+SC:ital@1&display=swap');
 body {
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-size: 16px;
@@ -143,9 +143,10 @@ h2 {
     height: 350px;
     width: auto;
     background:white;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 .msg2 {
     line-height: 1.5em;
@@ -164,62 +165,63 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    column-gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .a {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .b {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .c {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .d {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .e {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .f {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .g {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .h {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .i {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .j {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 .k {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 /* Contact page starts here*/
@@ -336,11 +338,13 @@ textarea::placeholder {
     grid-column: 2/3;
     grid-row: 3/5;
     margin-top: -1120px;
-    font-size:xx-large;
+    font-size: 2vw;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 35px;
     line-height: 1.28em;
+    max-height: fit-content;
+    max-width: fit-content;
 }
 #hero3-img {
     width: 100%;
@@ -373,6 +377,8 @@ textarea::placeholder {
 .moveDown {
     margin-top: 2em;
 }
+/* Transition css starts here*/
+
 @media screen and (max-width: 900px) {
     #hero, #hero2, .home-grid, .home-grid2 {
         display: block;
